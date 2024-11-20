@@ -10,32 +10,34 @@
 
     <header>
         <h1>My E-Commerce Store</h1>
-        <input type="text" id="searchBar" placeholder="Search for products..." onkeyup="searchProducts()">
+        <input type="text" id="searchBar" placeholder="Search for products..." onkeyup="searchProducts()" aria-label="Search for products">
     </header>
 
-    <section id="productList" class="product-list">
-        <!-- Product Items -->
-        <div class="product" data-name="Smartphone">
-            <img src="photos/smartphone.jpg" alt="Smartphone">
-            <h3>Smartphone</h3>
-            <p>₹29099.99</p>
-            <button class="buyBtn" onclick="buyNow('Smartphone')">Buy Now</button>
-        </div>
+    <main>
+        <section id="productList" class="product-list" aria-label="Product List">
+            <!-- Product Items -->
+            <div class="product" data-name="Smartphone" tabindex="0">
+                <img src="photos/smartphone.jpg" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>₹29,099.99</p>
+                <button class="buyBtn" onclick="buyNow('Smartphone')">Buy Now</button>
+            </div>
 
-        <div class="product" data-name="Laptop">
-            <img src="photos/laptop.jpg" alt="Laptop">
-            <h3>Laptop</h3>
-            <p>₹92000.99</p>
-            <button class="buyBtn" onclick="buyNow('Laptop')">Buy Now</button>
-        </div>
+            <div class="product" data-name="Laptop" tabindex="0">
+                <img src="photos/laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>₹92,000.99</p>
+                <button class="buyBtn" onclick="buyNow('Laptop')">Buy Now</button>
+            </div>
 
-        <div class="product" data-name="Headphones">
-            <img src="photos/headset.jpg" alt="Headphones">
-            <h3>Headphones</h3>
-            <p>₹1000</p>
-            <button class="buyBtn" onclick="buyNow('Headphones')">Buy Now</button>
-        </div>
-    </section>
+            <div class="product" data-name="Headphones" tabindex="0">
+                <img src="photos/headset.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>₹1,000.00</p>
+                <button class="buyBtn" onclick="buyNow('Headphones')">Buy Now</button>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 My E-Commerce Store. All rights reserved.</p>
